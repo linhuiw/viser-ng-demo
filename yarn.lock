@@ -157,6 +157,46 @@
   dependencies:
     tslib "^1.7.1"
 
+"@antv/data-set@^0.5.0":
+  version "0.5.4"
+  resolved "https://registry.npmjs.org/@antv/data-set/-/data-set-0.5.4.tgz#473b9899459e5ef61a7cf6def977966bd2148dc2"
+  dependencies:
+    d3-array "^1.2.0"
+    d3-composite-projections "^1.2.0"
+    d3-dsv "^1.0.5"
+    d3-geo "^1.6.4"
+    d3-geo-projection "^2.1.2"
+    d3-hierarchy "^1.1.5"
+    d3-sankey "^0.7.1"
+    d3-voronoi "^1.1.2"
+    lodash "^4.17.4"
+    point-at-length "^1.0.2"
+    regression "^2.0.0"
+    simple-statistics "^4.1.0"
+    topojson-client "^3.0.0"
+    wolfy87-eventemitter "^5.1.0"
+
+"@antv/g2@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.npmjs.org/@antv/g2/-/g2-3.0.0.tgz#254c204309ac26b10c192828ebbf731dc4f15326"
+  dependencies:
+    "@antv/g" "^2.0.0"
+    fecha "^2.3.1"
+    gl-matrix "^2.4.0"
+    lodash "^4.17.4"
+    wolfy87-eventemitter "^5.2.0"
+
+"@antv/g@^2.0.0":
+  version "2.0.2"
+  resolved "https://registry.npmjs.org/@antv/g/-/g-2.0.2.tgz#cfceda948ab595f64c90a525f30a7e4ce4a2e3e2"
+  dependencies:
+    d3-ease "^1.0.3"
+    d3-interpolate "^1.1.5"
+    d3-timer "^1.0.6"
+    gl-matrix "^2.3.2"
+    lodash "^4.17.4"
+    wolfy87-eventemitter "^5.1.0"
+
 "@ngtools/json-schema@1.1.0", "@ngtools/json-schema@^1.1.0":
   version "1.1.0"
   resolved "https://registry.npmjs.org/@ngtools/json-schema/-/json-schema-1.1.0.tgz#c3a0c544d62392acc2813a42c8a0dc6f58f86922"
@@ -179,6 +219,10 @@
   dependencies:
     "@angular-devkit/core" "0.0.21"
 
+"@types/d3-format@*":
+  version "1.2.1"
+  resolved "https://registry.npmjs.org/@types/d3-format/-/d3-format-1.2.1.tgz#9435fb1771d2fbf6a858c93218f4097c9aa396c1"
+
 "@types/jasmine@*":
   version "2.8.2"
   resolved "https://registry.npmjs.org/@types/jasmine/-/jasmine-2.8.2.tgz#6ae4d8740c0da5d5a627df725b4eed71b8e36668"
@@ -192,6 +236,10 @@
   resolved "https://registry.npmjs.org/@types/jasminewd2/-/jasminewd2-2.0.3.tgz#0d2886b0cbdae4c0eeba55e30792f584bf040a95"
   dependencies:
     "@types/jasmine" "*"
+
+"@types/lodash@*":
+  version "4.14.85"
+  resolved "https://registry.npmjs.org/@types/lodash/-/lodash-4.14.85.tgz#a16fbf942422f6eca5622b6910492c496c35069b"
 
 "@types/node@^6.0.46", "@types/node@~6.0.60":
   version "6.0.92"
@@ -208,6 +256,10 @@
 abbrev@1:
   version "1.1.1"
   resolved "https://registry.npmjs.org/abbrev/-/abbrev-1.1.1.tgz#f8f2c887ad10bf67f634f005b6987fed3179aac8"
+
+abs-svg-path@~0.1.1:
+  version "0.1.1"
+  resolved "https://registry.npmjs.org/abs-svg-path/-/abs-svg-path-0.1.1.tgz#df601c8e8d2ba10d4a76d625e236a9a39c2723bf"
 
 accepts@1.3.3:
   version "1.3.3"
@@ -291,6 +343,12 @@ alphanum-sort@^1.0.1, alphanum-sort@^1.0.2:
 amdefine@>=0.0.4:
   version "1.0.1"
   resolved "https://registry.npmjs.org/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
+
+angular-module-starter-test1@^1.0.8:
+  version "1.0.8"
+  resolved "https://registry.npmjs.org/angular-module-starter-test1/-/angular-module-starter-test1-1.0.8.tgz#87b254fee18d1da9d45b1f31503519dc53e6205c"
+  dependencies:
+    viser "^1.0.0"
 
 ansi-html@0.0.7:
   version "0.0.7"
@@ -1039,13 +1097,13 @@ combined-stream@^1.0.5, combined-stream@~1.0.5:
   dependencies:
     delayed-stream "~1.0.0"
 
+commander@2, commander@^2.9.0:
+  version "2.12.1"
+  resolved "https://registry.npmjs.org/commander/-/commander-2.12.1.tgz#468635c4168d06145b9323356d1da84d14ac4a7a"
+
 commander@2.11.x, commander@~2.11.0:
   version "2.11.0"
   resolved "https://registry.npmjs.org/commander/-/commander-2.11.0.tgz#157152fd1e7a6c8d98a5b715cf376df928004563"
-
-commander@^2.9.0:
-  version "2.12.1"
-  resolved "https://registry.npmjs.org/commander/-/commander-2.12.1.tgz#468635c4168d06145b9323356d1da84d14ac4a7a"
 
 common-tags@^1.3.1:
   version "1.4.0"
@@ -1391,6 +1449,97 @@ custom-event@~1.0.0:
 cyclist@~0.2.2:
   version "0.2.2"
   resolved "https://registry.npmjs.org/cyclist/-/cyclist-0.2.2.tgz#1b33792e11e914a2fd6d6ed6447464444e5fa640"
+
+d3-array@1, d3-array@^1.2.0:
+  version "1.2.1"
+  resolved "https://registry.npmjs.org/d3-array/-/d3-array-1.2.1.tgz#d1ca33de2f6ac31efadb8e050a021d7e2396d5dc"
+
+d3-collection@1:
+  version "1.0.4"
+  resolved "https://registry.npmjs.org/d3-collection/-/d3-collection-1.0.4.tgz#342dfd12837c90974f33f1cc0a785aea570dcdc2"
+
+d3-color@1:
+  version "1.0.3"
+  resolved "https://registry.npmjs.org/d3-color/-/d3-color-1.0.3.tgz#bc7643fca8e53a8347e2fbdaffa236796b58509b"
+
+d3-composite-projections@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.npmjs.org/d3-composite-projections/-/d3-composite-projections-1.2.0.tgz#fa0e6f1442f17d04643843a3a883c7d94e0c27c0"
+  dependencies:
+    d3-geo "1.2.4"
+    d3-path "^1.0.1"
+
+d3-dsv@^1.0.5:
+  version "1.0.8"
+  resolved "https://registry.npmjs.org/d3-dsv/-/d3-dsv-1.0.8.tgz#907e240d57b386618dc56468bacfe76bf19764ae"
+  dependencies:
+    commander "2"
+    iconv-lite "0.4"
+    rw "1"
+
+d3-ease@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.npmjs.org/d3-ease/-/d3-ease-1.0.3.tgz#68bfbc349338a380c44d8acc4fbc3304aa2d8c0e"
+
+d3-format@^1.2.0:
+  version "1.2.1"
+  resolved "https://registry.npmjs.org/d3-format/-/d3-format-1.2.1.tgz#4e19ecdb081a341dafaf5f555ee956bcfdbf167f"
+
+d3-geo-projection@^2.1.2:
+  version "2.3.1"
+  resolved "https://registry.npmjs.org/d3-geo-projection/-/d3-geo-projection-2.3.1.tgz#cf6d1051bec57bf197200201fd991ed063712849"
+  dependencies:
+    commander "2"
+    d3-array "1"
+    d3-geo "^1.7.1"
+
+d3-geo@1.2.4:
+  version "1.2.4"
+  resolved "https://registry.npmjs.org/d3-geo/-/d3-geo-1.2.4.tgz#d179f3baa76e623ef1e0d83693db705b7c599006"
+  dependencies:
+    d3-array "1"
+
+d3-geo@^1.6.4, d3-geo@^1.7.1:
+  version "1.9.0"
+  resolved "https://registry.npmjs.org/d3-geo/-/d3-geo-1.9.0.tgz#15c7d7a8ea9346e59ed150dc7b1f7f95479056e9"
+  dependencies:
+    d3-array "1"
+
+d3-hierarchy@^1.1.5:
+  version "1.1.5"
+  resolved "https://registry.npmjs.org/d3-hierarchy/-/d3-hierarchy-1.1.5.tgz#a1c845c42f84a206bcf1c01c01098ea4ddaa7a26"
+
+d3-interpolate@^1.1.5:
+  version "1.1.6"
+  resolved "https://registry.npmjs.org/d3-interpolate/-/d3-interpolate-1.1.6.tgz#2cf395ae2381804df08aa1bf766b7f97b5f68fb6"
+  dependencies:
+    d3-color "1"
+
+d3-path@1, d3-path@^1.0.1:
+  version "1.0.5"
+  resolved "https://registry.npmjs.org/d3-path/-/d3-path-1.0.5.tgz#241eb1849bd9e9e8021c0d0a799f8a0e8e441764"
+
+d3-sankey@^0.7.1:
+  version "0.7.1"
+  resolved "https://registry.npmjs.org/d3-sankey/-/d3-sankey-0.7.1.tgz#d229832268fc69a7fec84803e96c2256a614c521"
+  dependencies:
+    d3-array "1"
+    d3-collection "1"
+    d3-shape "^1.2.0"
+
+d3-shape@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.npmjs.org/d3-shape/-/d3-shape-1.2.0.tgz#45d01538f064bafd05ea3d6d2cb748fd8c41f777"
+  dependencies:
+    d3-path "1"
+
+d3-timer@^1.0.6:
+  version "1.0.7"
+  resolved "https://registry.npmjs.org/d3-timer/-/d3-timer-1.0.7.tgz#df9650ca587f6c96607ff4e60cc38229e8dd8531"
+
+d3-voronoi@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.npmjs.org/d3-voronoi/-/d3-voronoi-1.1.2.tgz#1687667e8f13a2d158c80c1480c5a29cb0d8973c"
 
 d@1:
   version "1.0.0"
@@ -2010,6 +2159,10 @@ faye-websocket@~0.11.0:
   dependencies:
     websocket-driver ">=0.5.1"
 
+fecha@^2.3.1:
+  version "2.3.1"
+  resolved "https://registry.npmjs.org/fecha/-/fecha-2.3.1.tgz#921b4e5a9d331aaa9b65c1634b26fc45945f6421"
+
 file-loader@^1.1.5:
   version "1.1.5"
   resolved "https://registry.npmjs.org/file-loader/-/file-loader-1.1.5.tgz#91c25b6b6fbe56dae99f10a425fd64933b5c9daa"
@@ -2254,6 +2407,10 @@ getpass@^0.1.1:
   resolved "https://registry.npmjs.org/getpass/-/getpass-0.1.7.tgz#5eff8e3e684d569ae4cb2b1282604e8ba62149fa"
   dependencies:
     assert-plus "^1.0.0"
+
+gl-matrix@^2.3.2, gl-matrix@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.npmjs.org/gl-matrix/-/gl-matrix-2.4.0.tgz#2089b13301a29eec822d9d99dffc1f78ee9a3c50"
 
 glob-base@^0.3.0:
   version "0.3.0"
@@ -2595,7 +2752,7 @@ https-proxy-agent@^1.0.0:
     debug "2"
     extend "3"
 
-iconv-lite@0.4.19:
+iconv-lite@0.4, iconv-lite@0.4.19:
   version "0.4.19"
   resolved "https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.4.19.tgz#f7468f60135f5e5dad3399c0a81be9a1603a082b"
 
@@ -2884,7 +3041,7 @@ is-wsl@^1.1.0:
   version "1.1.0"
   resolved "https://registry.npmjs.org/is-wsl/-/is-wsl-1.1.0.tgz#1f16e4aa22b04d1336b66188a66af3c600c3a66d"
 
-isarray@0.0.1:
+isarray@0.0.1, isarray@~0.0.1:
   version "0.0.1"
   resolved "https://registry.npmjs.org/isarray/-/isarray-0.0.1.tgz#8a18acfca9a8f4177e09abfc6038939b05d1eedf"
 
@@ -3934,6 +4091,10 @@ parse-passwd@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/parse-passwd/-/parse-passwd-1.0.0.tgz#6d5b934a456993b23d37f40a382d6f1666a8e5c6"
 
+parse-svg-path@~0.1.1:
+  version "0.1.2"
+  resolved "https://registry.npmjs.org/parse-svg-path/-/parse-svg-path-0.1.2.tgz#7a7ec0d1eb06fa5325c7d3e009b859a09b5d49eb"
+
 parsejson@0.0.3:
   version "0.0.3"
   resolved "https://registry.npmjs.org/parsejson/-/parsejson-0.0.3.tgz#ab7e3759f209ece99437973f7d0f1f64ae0e64ab"
@@ -4045,6 +4206,14 @@ pkg-dir@^2.0.0:
   resolved "https://registry.npmjs.org/pkg-dir/-/pkg-dir-2.0.0.tgz#f6d5d1109e19d63edf428e0bd57e12777615334b"
   dependencies:
     find-up "^2.1.0"
+
+point-at-length@^1.0.2:
+  version "1.1.0"
+  resolved "https://registry.npmjs.org/point-at-length/-/point-at-length-1.1.0.tgz#0ad72ebd0980d7f5a1ab12296c055f9eb6b30e57"
+  dependencies:
+    abs-svg-path "~0.1.1"
+    isarray "~0.0.1"
+    parse-svg-path "~0.1.1"
 
 portfinder@^1.0.9, portfinder@~1.0.12:
   version "1.0.13"
@@ -4660,6 +4829,10 @@ regjsparser@^0.1.4:
   dependencies:
     jsesc "~0.5.0"
 
+regression@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npmjs.org/regression/-/regression-2.0.0.tgz#0f23e4012f0a4c2b5ef828b4f4b4e39f72dfb96a"
+
 relateurl@0.2.x:
   version "0.2.7"
   resolved "https://registry.npmjs.org/relateurl/-/relateurl-0.2.7.tgz#54dbf377e51440aca90a4cd274600d3ff2d888a9"
@@ -4831,6 +5004,10 @@ run-queue@^1.0.0, run-queue@^1.0.3:
   resolved "https://registry.npmjs.org/run-queue/-/run-queue-1.0.3.tgz#e848396f057d223f24386924618e25694161ec47"
   dependencies:
     aproba "^1.1.1"
+
+rw@1:
+  version "1.3.3"
+  resolved "https://registry.npmjs.org/rw/-/rw-1.3.3.tgz#3f862dfa91ab766b14885ef4d01124bfda074fb4"
 
 rxjs@^5.5.2:
   version "5.5.2"
@@ -5037,6 +5214,10 @@ silent-error@^1.0.0:
   resolved "https://registry.npmjs.org/silent-error/-/silent-error-1.1.0.tgz#2209706f1c850a9f1d10d0d840918b46f26e1bc9"
   dependencies:
     debug "^2.2.0"
+
+simple-statistics@^4.1.0:
+  version "4.1.1"
+  resolved "https://registry.npmjs.org/simple-statistics/-/simple-statistics-4.1.1.tgz#533c48d48336ba3d350d8135f20fa7138acb0c7d"
 
 sntp@1.x.x:
   version "1.0.9"
@@ -5477,6 +5658,12 @@ to-fast-properties@^1.0.3:
   version "1.0.3"
   resolved "https://registry.npmjs.org/to-fast-properties/-/to-fast-properties-1.0.3.tgz#b83571fa4d8c25b82e231b06e3a3055de4ca1a47"
 
+topojson-client@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.npmjs.org/topojson-client/-/topojson-client-3.0.0.tgz#1f99293a77ef42a448d032a81aa982b73f360d2f"
+  dependencies:
+    commander "2"
+
 toposort@^1.0.0:
   version "1.0.6"
   resolved "https://registry.npmjs.org/toposort/-/toposort-1.0.6.tgz#c31748e55d210effc00fdcdc7d6e68d7d7bb9cec"
@@ -5786,6 +5973,17 @@ verror@1.10.0:
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
 
+viser@^1.0.0:
+  version "1.0.4"
+  resolved "https://registry.npmjs.org/viser/-/viser-1.0.4.tgz#9de88aa261a523b026ac441e6da31f6587e6759e"
+  dependencies:
+    "@antv/data-set" "^0.5.0"
+    "@antv/g2" "^3.0.0"
+    "@types/d3-format" "*"
+    "@types/lodash" "*"
+    d3-format "^1.2.0"
+    lodash "^4.17.4"
+
 vlq@^0.2.1:
   version "0.2.3"
   resolved "https://registry.npmjs.org/vlq/-/vlq-0.2.3.tgz#8f3e4328cf63b1540c0d67e1b2778386f8975b26"
@@ -5981,6 +6179,10 @@ wide-align@^1.1.0:
 window-size@0.1.0:
   version "0.1.0"
   resolved "https://registry.npmjs.org/window-size/-/window-size-0.1.0.tgz#5438cd2ea93b202efa3a19fe8887aee7c94f9c9d"
+
+wolfy87-eventemitter@^5.1.0, wolfy87-eventemitter@^5.2.0:
+  version "5.2.4"
+  resolved "https://registry.npmjs.org/wolfy87-eventemitter/-/wolfy87-eventemitter-5.2.4.tgz#5021d2952d3611cbcd195149711d9b595cd11d48"
 
 wordwrap@0.0.2:
   version "0.0.2"
