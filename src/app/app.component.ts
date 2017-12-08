@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-export const data = [
+const data = [
   { country: 'Europe', year: '1750', value: 163 },
   { country: 'Europe', year: '1800', value: 203 },
   { country: 'Europe', year: '1850', value: 276 },
@@ -19,26 +19,14 @@ export const data = [
 ];
 
 const dataPre = {
-  transform: {
+  transform: [{
     type: 'percent',
     field: 'value',
     dimension: 'country',
     groupBy: ['year'],
     as: 'percent'
-  }
+  }]
 };
-
-const dataMapping = [{
-  dataKey: 'year',
-  mark: 'column',
-}, {
-  dataKey: 'percent',
-  mark: 'row',
-}, {
-  dataKey: 'country',
-  mark: 'color',
-}];
-
 const scale = [{
   dataKey: 'percent',
   min: 0,
@@ -49,13 +37,11 @@ const scale = [{
   selector: 'app-root',
   template: `
   <div>
-    <Chart [forceFit]="forceFit" [height]="height" [data]="data" [dataPre]="dataPre" [dataMapping]="dataMapping" [scale]="scale">
-      <Tooltip></Tooltip>
-      <Axis></Axis>
-      <StackBar [ngStyle]="{ stroke: '#fff', lineWidth: 1 }" ></StackBar>
-    </Chart>
-    <LiteChart [height]="height" [data]="data" [dataPre]="dataPre" [dataMapping]="dataMapping" [forceFit]="forceFit" stackBar="true">
-    </LiteChart>
+    <v-chart [forceFit]="forceFit" [height]="height" [data]="data" [dataPre]="dataPre" [scale]="scale">
+      <v-tooltip></v-tooltip>
+      <v-axis></v-axis>
+      <v-stack-bar position='year*percent' color='country' [style]="{ stroke: '#fff', lineWidth: 1 }" ></v-stack-bar>
+    </v-chart>
   </div>
   `
 })
@@ -65,7 +51,6 @@ export class AppComponent {
   height = 400;
   data = data;
   dataPre = dataPre;
-  dataMapping = dataMapping;
   scale = scale;
   fields = ['cut', 'clarity'];
 }

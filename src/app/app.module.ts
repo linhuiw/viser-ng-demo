@@ -1,8 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-// import { ViserModule } from 'viser-ng';
-import { ViserModule } from 'angular-module-starter-test1';
-
+import { ViserModule } from 'viser-ng';
 import { AppComponent } from './app.component';
 
 // console.log(ViserModule, 'ViserModule');
